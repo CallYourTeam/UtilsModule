@@ -1,0 +1,10 @@
+out
+build
+bin
+*.bkp
+.vs
+.vscode
+*.http
+appsettings.Development.json
+obj
+*.csproj.user
