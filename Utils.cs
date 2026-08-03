@@ -21,11 +21,14 @@ namespace UtilsModule
         {
             var list = new List<T>();
 
-            var strList = str.Split(';');
-
-            foreach (var item in strList)
+            if (str.Length != 0)
             {
-                list.Add(strToItemFunc(item));
+                var strList = str.Split(';');
+
+                foreach (var item in strList)
+                {
+                    list.Add(strToItemFunc(item));
+                }
             }
 
             return list;
